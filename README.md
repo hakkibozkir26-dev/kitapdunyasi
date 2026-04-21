@@ -1,11 +1,26 @@
-<div align="center">
+# KitapDünyası - SAP Mimarisinde MVC Kitap Satış Sitesi
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Bu proje, SAP ABAP veri yapısı (11 tablo) kullanılarak geliştirilmiş, Vanilla JavaScript (ES Modules) tabanlı bir kitap satış platformudur.
 
-  <h1>Built with AI Studio</h2>
+## Teknolojiler
+- HTML5 & CSS3 (Mobile First, Custom Properties)
+- Vanilla JavaScript (ES Modules)
+- MVC (Model-View-Controller) Mimarisi
+- SRP (Single Responsibility Principle)
+- LocalStorage (Sepet, Favoriler, Yorumlar)
+- SAP FK Çözümleme (5 Tablo Join)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Özellikler
+- **F1. Kitap Listeleme:** Kategorilere göre filtreleme ve gelişmiş sıralama.
+- **F2. Dinamik Adres Zinciri:** 5 tabloyu (Address-Street-City-State-Country) model seviyesinde bağlar.
+- **F3. Admin Paneli:** Şifre korumalı, 12 farklı istatistik ve SAP tablo eşleştirme ekranı.
+- **F4. Sepet & Favori:** LocalStorage ile kalıcı veri yönetimi.
+- **F5. Dark Mode:** Kullanıcı tercihine duyarlı tema desteği.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Kurulum ve Dağıtım
+- Proje hiçbir build süreci gerektirmez.
+- `index.html` üzerinden doğrudan çalıştırılabilir.
+- Netlify'a klasörü sürükle-bırak yöntemiyle yüklenebilir.
 
-</div>
+## Yazar
+Google AI Studio Build - KitapDünyası Örneği

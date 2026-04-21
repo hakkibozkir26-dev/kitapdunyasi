@@ -1,0 +1,25 @@
+/**
+ * detail.css - Kitap detay sayfası stilleri.
+ */
+.book-detail {
+    padding: 1rem 0;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 1.2rem;
+}
+
+.book-detail-grid .book-image {
+    font-size: 8rem;
+    box-shadow: var(--shadow);
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+}
+
+.book-detail table {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}

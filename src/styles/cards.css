@@ -1,0 +1,92 @@
+/**
+ * cards.css - Kitap kartı stilleri.
+ */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 16px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.book-emoji {
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-light);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 99px;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.book-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-author {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.book-price {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.fav-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #ccc;
+    z-index: 10;
+}
+
+.fav-btn.active {
+    color: #ef4444;
+}
+
+.cat-Roman { background: #fee2e2; color: #b91c1c; }
+.cat-Tarih { background: #ffedd5; color: #c2410c; }
+.cat-Psikoloji { background: #f3e8ff; color: #7e22ce; }
+.cat-Klasik { background: #dcfce7; color: #15803d; }
+.cat-Mizah { background: #fef9c3; color: #a16207; }
+.cat-Polisiye { background: #e0f2fe; color: #0369a1; }

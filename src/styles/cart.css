@@ -1,0 +1,12 @@
+/**
+ * cart.css - Sepet sayfası stilleri.
+ */
+.cart-summary {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+}
+
+.cart-items .book-card:hover {
+    transform: none;
+}

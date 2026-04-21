@@ -1,0 +1,39 @@
+/**
+ * admin.css - Admin panel stilleri.
+ */
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .admin-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.admin-stats .book-card {
+    background: var(--bg-white);
+}
+
+.admin-panel table th {
+    font-size: 0.8rem;
+}
+
+.admin-panel table td {
+    font-size: 0.9rem;
+}

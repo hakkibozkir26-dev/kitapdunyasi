@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitapDünyası - SAP Mimarisinde MVC Kitap Satış Sitesi</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/sidebar.css">
+    <link rel="stylesheet" href="./src/styles/cards.css">
+    <link rel="stylesheet" href="./src/styles/detail.css">
+    <link rel="stylesheet" href="./src/styles/cart.css">
+    <link rel="stylesheet" href="./src/styles/admin.css">
+    <link rel="stylesheet" href="./src/styles/admin-crud.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/forms.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+    
+    <!-- Base Styles for Detail and Cart to avoid missing file errors -->
+    <style>
+        .book-detail-grid img { max-width: 100%; border-radius: 8px; }
+        .cart-container table { width: 100%; border-collapse: collapse; }
+        .admin-panel th, .admin-panel td { border: 1px solid var(--border); padding: 8px; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header id="header-container"></header>
+        <div class="main-layout">
+            <aside id="sidebar-container" class="sidebar"></aside>
+            <main id="root" class="content-area"></main>
+        </div>
+        
+        <footer class="footer-status">
+            <div>Sistem Durumu: Çevrimiçi • MVC Router Aktif • SRP Validasyonu: Başarılı</div>
+            <div>KitapDünyası © 2024 • Netlify Statik Yayın</div>
+        </footer>
+    </div>
+
+    <!-- UI Helpers -->
+    <div id="toast-container"></div>
+
+    <!-- App Initialization -->
+    <script type="module" src="./src/app.js"></script>
+</body>
+</html>

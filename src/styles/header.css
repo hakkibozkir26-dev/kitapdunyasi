@@ -1,0 +1,106 @@
+/**
+ * header.css - Header stilleri.
+ */
+header {
+    background-color: var(--primary);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+    max-width: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-badge {
+    background: #111827;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0 1rem;
+    background: #f3f4f6;
+    color: var(--text-muted);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-btn {
+    color: white;
+    position: relative;
+}
+
+.badge-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+/* SECONDARY NAV */
+.sub-nav {
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0;
+    overflow-x: auto;
+}
+
+.sub-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.sub-nav a.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
